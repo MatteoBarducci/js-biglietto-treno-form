@@ -36,11 +36,14 @@ generateButton.addEventListener('click', function () {
     document.getElementById('user-name-result').innerHTML = (userName);
     let discount
     if (userAge < 18) {
-        discount = (discountUnderAge);
+        discount = ('Sconto minorenne ' + discountUnderAge);
     } else if (userAge > 65) {
-        discount = (discountOver65);
+        discount = ('Sconto anziano ' + discountOver65);
     } else {
-        discount = 0;
+        discount = ('Nessuno sconto');
     }
     document.getElementById('discount-result').innerHTML = (discount);
+    document.getElementById('vagon-result').innerHTML = (Math.floor(Math.random() * 10) + 1);
+    document.getElementById('code-result').innerHTML = (Math.floor(Math.random() * 10000) + 1);
+
 });
