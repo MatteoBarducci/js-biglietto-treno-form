@@ -32,13 +32,13 @@ generateButton.addEventListener('click', function () {
     }
 
     //STAMPO IL RISULTATO PER L'UTENTE
-    document.getElementById('price-result').innerHTML = (finalPrice.toFixed(2));
+    document.getElementById('price-result').innerHTML = (finalPrice.toFixed(2)+'€');
     document.getElementById('user-name-result').innerHTML = (userName);
     let discount
     if (userAge < 18) {
-        discount = ('Sconto minorenne ' + discountUnderAge);
+        discount = ('Sconto minorenne ' + discountUnderAge.toFixed(2)+'€');
     } else if (userAge > 65) {
-        discount = ('Sconto anziano ' + discountOver65);
+        discount = ('Sconto anziano ' + discountOver65.toFixed(2)+'€');
     } else {
         discount = ('Nessuno sconto');
     }
