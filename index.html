@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="row">
+            <div class="input-container">
+                <label>Nome</label>
+                <input id="user-name" type="text">
+            </div>
+
+            <div class="input-container">
+                <label>Kilometri</label>
+                <input id="user-km" type="text">
+            </div>
+
+            <div class="input-container">
+                <label>Età</label>
+                <input id="user-age" type="text">
+            </div>
+        </div>
+        <div class="row">
+            <button id="generate-button">Genera biglietto</button>
+            <button id="clear-button">Pulisci</button>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>DETTAGLI BIGLIETTO</h2>
+        <div class="row2">
+            <div>
+                <h3>Nome passeggero</h3>
+                <h4 id="user-name-result"></h4>
+            </div>
+            <div>
+                <h4>Sconto</h4>
+                <h4 id="discount-result"></h4>
+            </div>
+            <div>
+                <h4>Costo</h4>
+                <h4 id="price-result"></h4>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
